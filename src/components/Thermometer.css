@@ -1,0 +1,148 @@
+.thermometer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.thermometer-container {
+    position: relative;
+    width: 50px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+}
+
+.thermometer-mercury {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    transition: height 0.5s ease-in-out;
+}
+
+.saved-locations {
+    margin-top: 20px;
+}
+
+.new-thermo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-thermo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-width: 140px;
+    height: 300px;
+    border: 3px solid black;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    min-width: 135px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.new-thermo-things {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.new-thermometer-tube {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 290px;
+    background-color: #f2f2f2;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.new-thermometer-bulb {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 3;
+}
+
+.mercury-holder {
+    position: absolute;
+    bottom: 59px;
+    height: 225px;
+    width: 15px;
+    display: flex;
+}
+
+.new-thermometer-mercury {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+    z-index: 2;
+    width: 100%;
+    transition: height 0.5s ease-in-out;
+}
+
+.new-thermometer-labels {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 234px;
+    width: 100%;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.new-farenheit-thermometer-labels {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    right: 10%;
+}
+
+.new-temp-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vw;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.button {
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 5vw;
+    cursor: pointer;
+}
+
+.icon {
+    width: 90px;
+    height: 90px;
+}
+
+.hot .icon {
+    fill: red;
+}
+
+.cold .icon {
+    fill: blue;
+}
